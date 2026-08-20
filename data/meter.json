@@ -1,0 +1,1159 @@
+{
+  "HHM": {
+    "image": "assets/images/METER/hhm/hhm_meter.png",
+    "status": [
+      {
+        "name": "LCD",
+        "desc": "Hiển thị các thông số đo, điện năng, thời gian và cảnh báo của công tơ."
+      },
+      {
+        "name": "LED kWh",
+        "desc": "Nhấp nháy theo xung điện năng tác dụng."
+      },
+      {
+        "name": "LED kVArh",
+        "desc": "Nhấp nháy theo xung điện năng phản kháng."
+      },
+      {
+        "name": "LED Alarm",
+        "desc": "Nhấp nháy hoặc sáng khi công tơ phát hiện sự kiện bất thường."
+      }
+    ],
+    "lcd": [
+      {
+        "code": "1.8.0",
+        "name": "Tổng điện năng giao",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.1",
+        "name": "Điện năng giao biểu 1",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.2",
+        "name": "Điện năng giao biểu 2",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.3",
+        "name": "Điện năng giao biểu 3",
+        "group": "energy"
+      },
+      {
+        "code": "3.8.0",
+        "name": "Điện năng vô công giao",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.0",
+        "name": "Tổng điện năng nhận",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.1",
+        "name": "Điện năng nhận biểu 1",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.2",
+        "name": "Điện năng nhận biểu 2",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.3",
+        "name": "Điện năng nhận biểu 3",
+        "group": "energy"
+      },
+      {
+        "code": "4.8.0",
+        "name": "Điện năng vô công nhận",
+        "group": "energy"
+      },
+      {
+        "code": "32.7.0",
+        "name": "Điện áp pha A",
+        "group": "voltage"
+      },
+      {
+        "code": "52.7.0",
+        "name": "Điện áp pha B",
+        "group": "voltage"
+      },
+      {
+        "code": "72.7.0",
+        "name": "Điện áp pha C",
+        "group": "voltage"
+      },
+      {
+        "code": "31.7.0",
+        "name": "Dòng điện pha A",
+        "group": "current"
+      },
+      {
+        "code": "51.7.0",
+        "name": "Dòng điện pha B",
+        "group": "current"
+      },
+      {
+        "code": "71.7.0",
+        "name": "Dòng điện pha C",
+        "group": "current"
+      },
+      {
+        "code": "81.7.40",
+        "name": "Góc pha A",
+        "group": "power"
+      },
+      {
+        "code": "81.7.51",
+        "name": "Góc pha B",
+        "group": "power"
+      },
+      {
+        "code": "81.7.62",
+        "name": "Góc pha C",
+        "group": "power"
+      },
+      {
+        "code": "1.7.0",
+        "name": "Công suất tác dụng",
+        "group": "power"
+      },
+      {
+        "code": "13.7.0",
+        "name": "Hệ số công suất",
+        "group": "power"
+      },
+      {
+        "code": "14.7.0",
+        "name": "Tần số",
+        "group": "power"
+      },
+      {
+        "code": "C.1.0",
+        "name": "Số công tơ",
+        "group": "info"
+      },
+      {
+        "code": "0.9.2",
+        "name": "Ngày",
+        "group": "info"
+      },
+      {
+        "code": "0.9.1",
+        "name": "Thời gian",
+        "group": "info"
+      }
+    ],
+    "guide": [
+      "Kiểm tra công tơ đã được cấp nguồn.",
+      "Kiểm tra màn hình LCD hiển thị bình thường.",
+      "Kiểm tra đèn LED xung và LED Alarm.",
+      "Kiểm tra cổng Optical.",
+      "Kiểm tra truyền thông RS485 hoặc Module PLC/RF.",
+      "Đọc thông số tức thời.",
+      "Đọc điện năng.",
+      "Đọc biểu đồ phụ tải.",
+      "Đọc nhật ký sự kiện.",
+      "Kiểm tra Password và địa chỉ công tơ."
+    ],
+    "errors": [
+      {
+        "error": "LCD không hiển thị",
+        "solution": "Kiểm tra nguồn cấp, cầu chì và điện áp đầu vào."
+      },
+      {
+        "error": "Không đọc được công tơ",
+        "solution": "Kiểm tra Optical, RS485, Module truyền thông, Password và địa chỉ công tơ."
+      },
+      {
+        "error": "LED Alarm nhấp nháy",
+        "solution": "Kiểm tra sự kiện mất pha, quá áp, thấp áp, quá dòng hoặc sai thứ tự pha."
+      },
+      {
+        "error": "Không truyền dữ liệu",
+        "solution": "Kiểm tra Module PLC/RF, RS485 hoặc thay Module để kiểm tra."
+      }
+    ],
+    "pdf": "assets/pdf/HHM/HHM_Meter.pdf"
+  },
+  "GELEX": {
+    "image": "assets/images/METER/gelex/meter_gelex.jpg",
+    "status": [
+      {
+        "name": "LCD",
+        "desc": "Hiển thị điện năng và các thông số vận hành của công tơ."
+      },
+      {
+        "name": "Biểu tượng truyền thông",
+        "desc": "Hiển thị khi công tơ đang truyền dữ liệu."
+      },
+      {
+        "name": "Biểu tượng RF/GPRS",
+        "desc": "Hiển thị trạng thái hoạt động của module truyền thông."
+      },
+      {
+        "name": "Battery",
+        "desc": "Nhấp nháy khi pin RTC yếu."
+      },
+      {
+        "name": "ERROR",
+        "desc": "Hiển thị khi công tơ phát hiện lỗi phần cứng hoặc lỗi hệ thống."
+      }
+    ],
+    "lcd": [
+      {
+        "code": "1.8.0",
+        "name": "Tổng điện năng giao",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.1",
+        "name": "Điện năng giao biểu 1",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.2",
+        "name": "Điện năng giao biểu 2",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.3",
+        "name": "Điện năng giao biểu 3",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.0",
+        "name": "Tổng điện năng nhận",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.1",
+        "name": "Điện năng nhận biểu 1",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.2",
+        "name": "Điện năng nhận biểu 2",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.3",
+        "name": "Điện năng nhận biểu 3",
+        "group": "energy"
+      },
+      {
+        "code": "3.8.0",
+        "name": "Điện năng vô công giao",
+        "group": "energy"
+      },
+      {
+        "code": "4.8.0",
+        "name": "Điện năng vô công nhận",
+        "group": "energy"
+      },
+      {
+        "code": "32.7.0",
+        "name": "Điện áp pha A",
+        "group": "voltage"
+      },
+      {
+        "code": "52.7.0",
+        "name": "Điện áp pha B",
+        "group": "voltage"
+      },
+      {
+        "code": "72.7.0",
+        "name": "Điện áp pha C",
+        "group": "voltage"
+      },
+      {
+        "code": "31.7.0",
+        "name": "Dòng điện pha A",
+        "group": "current"
+      },
+      {
+        "code": "51.7.0",
+        "name": "Dòng điện pha B",
+        "group": "current"
+      },
+      {
+        "code": "71.7.0",
+        "name": "Dòng điện pha C",
+        "group": "current"
+      },
+      {
+        "code": "13.7.0",
+        "name": "Hệ số công suất",
+        "group": "power"
+      },
+      {
+        "code": "14.7.0",
+        "name": "Tần số",
+        "group": "power"
+      },
+      {
+        "code": "81.7.40",
+        "name": "Góc pha A",
+        "group": "power"
+      },
+      {
+        "code": "81.7.51",
+        "name": "Góc pha B",
+        "group": "power"
+      },
+      {
+        "code": "81.7.62",
+        "name": "Góc pha C",
+        "group": "power"
+      },
+      {
+        "code": "96.1.0",
+        "name": "Số serial công tơ",
+        "group": "info"
+      }
+    ],
+    "guide": [
+      "Kiểm tra màn hình LCD có hiển thị bình thường.",
+      "Kiểm tra nguồn cấp công tơ.",
+      "Kiểm tra biểu tượng ERROR.",
+      "Kiểm tra đèn và biểu tượng truyền thông.",
+      "Kiểm tra cổng quang Optical.",
+      "Kiểm tra đường truyền RS485.",
+      "Kiểm tra Password.",
+      "Đọc thông số tức thời.",
+      "Đọc điện năng.",
+      "Đọc sự kiện.",
+      "Đọc biểu đồ phụ tải.",
+      "Kiểm tra trạng thái module RF/GPRS."
+    ],
+    "errors": [
+      {
+        "error": "Không đọc được công tơ",
+        "solution": "Kiểm tra nguồn, Optical, RS485, Password và địa chỉ công tơ."
+      },
+      {
+        "error": "Sai Password",
+        "solution": "Kiểm tra lại Password hoặc cập nhật đúng mật khẩu công tơ."
+      },
+      {
+        "error": "LCD không hiển thị",
+        "solution": "Kiểm tra nguồn cấp hoặc thay công tơ."
+      },
+      {
+        "error": "ERROR trên màn hình",
+        "solution": "Kiểm tra sự kiện lỗi hoặc thay công tơ nếu lỗi phần cứng."
+      },
+      {
+        "error": "Không truyền dữ liệu",
+        "solution": "Kiểm tra module RF/GPRS, RS485 hoặc modem."
+      },
+      {
+        "error": "Pin RTC yếu",
+        "solution": "Thay pin RTC hoặc thay công tơ."
+      }
+    ],
+    "pdf": "assets/pdf/GELEX/GELEX_Meter.pdf"
+  },
+  "VINASINO": {
+    "image": "assets/images/METER/VINASINO/meter_vinasino.png",
+    "status": [
+      {
+        "name": "LCD",
+        "desc": "Hiển thị các thông số vận hành và điện năng của công tơ."
+      },
+      {
+        "name": "Đèn xung kWh",
+        "desc": "Nhấp nháy theo lượng điện năng tiêu thụ."
+      },
+      {
+        "name": "Đèn truyền thông",
+        "desc": "Nhấp nháy khi công tơ đang truyền dữ liệu."
+      },
+      {
+        "name": "Đèn cảnh báo",
+        "desc": "Sáng khi công tơ có lỗi hoặc sự kiện bất thường."
+      }
+    ],
+    "lcd": [
+      {
+        "code": "1.8.0",
+        "name": "Tổng điện năng giao",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.1",
+        "name": "Điện năng biểu 1",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.2",
+        "name": "Điện năng biểu 2",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.3",
+        "name": "Điện năng biểu 3",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.0",
+        "name": "Tổng điện năng nhận",
+        "group": "energy"
+      },
+      {
+        "code": "3.8.0",
+        "name": "Điện năng vô công giao",
+        "group": "energy"
+      },
+      {
+        "code": "4.8.0",
+        "name": "Điện năng vô công nhận",
+        "group": "energy"
+      },
+      {
+        "code": "32.7.0",
+        "name": "Điện áp pha A",
+        "group": "voltage"
+      },
+      {
+        "code": "52.7.0",
+        "name": "Điện áp pha B",
+        "group": "voltage"
+      },
+      {
+        "code": "72.7.0",
+        "name": "Điện áp pha C",
+        "group": "voltage"
+      },
+      {
+        "code": "31.7.0",
+        "name": "Dòng điện pha A",
+        "group": "current"
+      },
+      {
+        "code": "51.7.0",
+        "name": "Dòng điện pha B",
+        "group": "current"
+      },
+      {
+        "code": "71.7.0",
+        "name": "Dòng điện pha C",
+        "group": "current"
+      },
+      {
+        "code": "13.7.0",
+        "name": "Hệ số công suất",
+        "group": "power"
+      },
+      {
+        "code": "14.7.0",
+        "name": "Tần số",
+        "group": "power"
+      },
+      {
+        "code": "96.1.0",
+        "name": "Số serial",
+        "group": "info"
+      }
+    ],
+    "guide": [
+      "Kiểm tra màn hình LCD có hiển thị bình thường.",
+      "Kiểm tra nguồn cấp công tơ.",
+      "Kiểm tra đèn báo hoạt động.",
+      "Kiểm tra cổng quang Optical.",
+      "Kiểm tra đường truyền RS485.",
+      "Đọc thông số tức thời.",
+      "Đọc điện năng.",
+      "Đọc sự kiện.",
+      "Đọc biểu đồ phụ tải."
+    ],
+    "errors": [
+      {
+        "error": "Không đọc được công tơ",
+        "solution": "Kiểm tra nguồn, Optical, RS485, địa chỉ và Password."
+      },
+      {
+        "error": "Sai Password",
+        "solution": "Kiểm tra lại Password của công tơ."
+      },
+      {
+        "error": "Mất truyền thông",
+        "solution": "Kiểm tra dây RS485 hoặc modem."
+      },
+      {
+        "error": "LCD không hiển thị",
+        "solution": "Kiểm tra nguồn cấp hoặc thay công tơ."
+      }
+    ],
+    "pdf": "assets/pdf/VINASINO/VINASINO_Meter.pdf"
+  },
+  "ELSTER": {
+    "image": "assets/images/METER/elster/elster_meter.png",
+    "status": [
+      {
+        "name": "LCD",
+        "desc": "Hiển thị điện năng, thông số tức thời, thời gian và các cảnh báo của công tơ."
+      },
+      {
+        "name": "LED kWh",
+        "desc": "Nhấp nháy theo xung điện năng tác dụng tiêu thụ."
+      },
+      {
+        "name": "Optical",
+        "desc": "Cổng giao tiếp quang dùng để đọc dữ liệu và cấu hình công tơ."
+      },
+      {
+        "name": "Module truyền thông",
+        "desc": "Hỗ trợ RS232, RS485, GSM, Ethernet hoặc RF tùy cấu hình."
+      }
+    ],
+    "lcd": [
+      {
+        "code": "Tổng điện năng giao",
+        "name": "Điện năng tác dụng chiều giao",
+        "group": "energy"
+      },
+      {
+        "code": "Biểu 1",
+        "name": "Điện năng biểu giá 1",
+        "group": "energy"
+      },
+      {
+        "code": "Biểu 2",
+        "name": "Điện năng biểu giá 2",
+        "group": "energy"
+      },
+      {
+        "code": "Biểu 3",
+        "name": "Điện năng biểu giá 3",
+        "group": "energy"
+      },
+      {
+        "code": "Tổng điện năng nhận",
+        "name": "Điện năng tác dụng chiều nhận",
+        "group": "energy"
+      },
+      {
+        "code": "Vô công giao",
+        "name": "Điện năng phản kháng chiều giao",
+        "group": "energy"
+      },
+      {
+        "code": "Vô công nhận",
+        "name": "Điện năng phản kháng chiều nhận",
+        "group": "energy"
+      },
+      {
+        "code": "Điện áp pha A",
+        "name": "Điện áp pha A",
+        "group": "voltage"
+      },
+      {
+        "code": "Điện áp pha B",
+        "name": "Điện áp pha B",
+        "group": "voltage"
+      },
+      {
+        "code": "Điện áp pha C",
+        "name": "Điện áp pha C",
+        "group": "voltage"
+      },
+      {
+        "code": "Dòng điện pha A",
+        "name": "Dòng điện pha A",
+        "group": "current"
+      },
+      {
+        "code": "Dòng điện pha B",
+        "name": "Dòng điện pha B",
+        "group": "current"
+      },
+      {
+        "code": "Dòng điện pha C",
+        "name": "Dòng điện pha C",
+        "group": "current"
+      },
+      {
+        "code": "Công suất tác dụng",
+        "name": "Công suất tác dụng tức thời",
+        "group": "power"
+      },
+      {
+        "code": "Công suất phản kháng",
+        "name": "Công suất phản kháng tức thời",
+        "group": "power"
+      },
+      {
+        "code": "Hệ số công suất",
+        "name": "Power Factor",
+        "group": "power"
+      },
+      {
+        "code": "Tần số",
+        "name": "Tần số lưới điện",
+        "group": "power"
+      },
+      {
+        "code": "Ngày",
+        "name": "Ngày hiện tại",
+        "group": "info"
+      },
+      {
+        "code": "Thời gian",
+        "name": "Đồng hồ thời gian thực",
+        "group": "info"
+      },
+      {
+        "code": "Số Serial",
+        "name": "Số seri công tơ",
+        "group": "info"
+      },
+      {
+        "code": "Biểu đồ phụ tải",
+        "name": "Load Profile",
+        "group": "info"
+      },
+      {
+        "code": "Sự kiện",
+        "name": "Event Log",
+        "group": "info"
+      }
+    ],
+    "guide": [
+      "Kiểm tra công tơ đã được cấp nguồn.",
+      "Kiểm tra màn hình LCD hiển thị đầy đủ.",
+      "Kiểm tra LED xung kWh hoạt động.",
+      "Kiểm tra cổng Optical.",
+      "Kiểm tra Module truyền thông (RS485/GSM/Ethernet).",
+      "Kiểm tra địa chỉ và Password công tơ.",
+      "Đọc thông số tức thời.",
+      "Đọc điện năng.",
+      "Đọc biểu đồ phụ tải (Load Profile).",
+      "Đọc nhật ký sự kiện (Event Log)."
+    ],
+    "errors": [
+      {
+        "error": "Không đọc được công tơ",
+        "solution": "Kiểm tra nguồn cấp, Optical, Module truyền thông, Password và địa chỉ công tơ."
+      },
+      {
+        "error": "LCD không hiển thị",
+        "solution": "Kiểm tra nguồn cấp hoặc thay công tơ."
+      },
+      {
+        "error": "Không truyền dữ liệu",
+        "solution": "Kiểm tra RS485, Module GSM/Ethernet hoặc modem."
+      },
+      {
+        "error": "Mất dữ liệu biểu đồ phụ tải",
+        "solution": "Kiểm tra thời gian công tơ và cấu hình Load Profile."
+      },
+      {
+        "error": "Sai thời gian",
+        "solution": "Đồng bộ lại thời gian bằng phần mềm cấu hình."
+      }
+    ],
+    "pdf": "assets/pdf/ELSTER/ELSTER_Meter.pdf"
+  },
+  "LANDIS": {
+    "image": "assets/images/METER/landis/landis_meter.png",
+    "status": [
+      {
+        "name": "LCD",
+        "desc": "Hiển thị điện năng, thông số tức thời, thời gian, cảnh báo và các màn hình vận hành."
+      },
+      {
+        "name": "LED kWh",
+        "desc": "Nhấp nháy theo xung điện năng tác dụng."
+      },
+      {
+        "name": "LED Alarm",
+        "desc": "Sáng hoặc nhấp nháy khi có sự kiện hoặc cảnh báo."
+      },
+      {
+        "name": "Optical",
+        "desc": "Cổng quang IEC62056-21 dùng để đọc dữ liệu và cài đặt."
+      }
+    ],
+    "lcd": [
+      {
+        "code": "1.8.0",
+        "name": "Tổng điện năng giao",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.1",
+        "name": "Điện năng giao biểu 1",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.2",
+        "name": "Điện năng giao biểu 2",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.3",
+        "name": "Điện năng giao biểu 3",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.0",
+        "name": "Tổng điện năng nhận",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.1",
+        "name": "Điện năng nhận biểu 1",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.2",
+        "name": "Điện năng nhận biểu 2",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.3",
+        "name": "Điện năng nhận biểu 3",
+        "group": "energy"
+      },
+      {
+        "code": "3.8.0",
+        "name": "Điện năng vô công giao",
+        "group": "energy"
+      },
+      {
+        "code": "4.8.0",
+        "name": "Điện năng vô công nhận",
+        "group": "energy"
+      },
+      {
+        "code": "32.7.0",
+        "name": "Điện áp pha A",
+        "group": "voltage"
+      },
+      {
+        "code": "52.7.0",
+        "name": "Điện áp pha B",
+        "group": "voltage"
+      },
+      {
+        "code": "72.7.0",
+        "name": "Điện áp pha C",
+        "group": "voltage"
+      },
+      {
+        "code": "31.7.0",
+        "name": "Dòng điện pha A",
+        "group": "current"
+      },
+      {
+        "code": "51.7.0",
+        "name": "Dòng điện pha B",
+        "group": "current"
+      },
+      {
+        "code": "71.7.0",
+        "name": "Dòng điện pha C",
+        "group": "current"
+      },
+      {
+        "code": "1.7.0",
+        "name": "Công suất tác dụng",
+        "group": "power"
+      },
+      {
+        "code": "3.7.0",
+        "name": "Công suất phản kháng",
+        "group": "power"
+      },
+      {
+        "code": "13.7.0",
+        "name": "Hệ số công suất",
+        "group": "power"
+      },
+      {
+        "code": "14.7.0",
+        "name": "Tần số",
+        "group": "power"
+      },
+      {
+        "code": "81.7.40",
+        "name": "Góc pha A",
+        "group": "power"
+      },
+      {
+        "code": "81.7.51",
+        "name": "Góc pha B",
+        "group": "power"
+      },
+      {
+        "code": "81.7.62",
+        "name": "Góc pha C",
+        "group": "power"
+      },
+      {
+        "code": "96.1.0",
+        "name": "Số Serial công tơ",
+        "group": "info"
+      },
+      {
+        "code": "0.9.1",
+        "name": "Thời gian",
+        "group": "info"
+      },
+      {
+        "code": "0.9.2",
+        "name": "Ngày",
+        "group": "info"
+      },
+      {
+        "code": "0.2.0",
+        "name": "Phiên bản Firmware",
+        "group": "info"
+      }
+    ],
+    "guide": [
+      "Kiểm tra nguồn cấp công tơ.",
+      "Kiểm tra màn hình LCD hiển thị bình thường.",
+      "Kiểm tra LED xung và LED Alarm.",
+      "Kiểm tra cổng Optical.",
+      "Kiểm tra truyền thông RS485 hoặc modem.",
+      "Kiểm tra địa chỉ công tơ.",
+      "Kiểm tra Password.",
+      "Đọc thông số tức thời.",
+      "Đọc điện năng.",
+      "Đọc biểu đồ phụ tải.",
+      "Đọc nhật ký sự kiện.",
+      "Kiểm tra thời gian công tơ."
+    ],
+    "errors": [
+      {
+        "error": "Không đọc được công tơ",
+        "solution": "Kiểm tra nguồn cấp, Optical, RS485, Password, địa chỉ công tơ và modem."
+      },
+      {
+        "error": "LCD không hiển thị",
+        "solution": "Kiểm tra nguồn cấp hoặc thay công tơ."
+      },
+      {
+        "error": "Không truyền dữ liệu",
+        "solution": "Kiểm tra RS485, modem, DCU hoặc module truyền thông."
+      },
+      {
+        "error": "Sai thời gian",
+        "solution": "Đồng bộ lại thời gian bằng phần mềm đọc công tơ."
+      },
+      {
+        "error": "LED Alarm sáng",
+        "solution": "Kiểm tra nhật ký sự kiện để xác định mất pha, ngược cực tính CT, quá áp hoặc thấp áp."
+      }
+    ],
+    "pdf": "assets/pdf/LANDIS/LANDIS_E650.pdf"
+  },
+  "PSMART": {
+    "image": "assets/images/METER/psmart/meter_psmart.jpg",
+    "status": [
+      {
+        "name": "LCD",
+        "desc": "Hiển thị điện năng, thông số vận hành, thời gian và các cảnh báo của công tơ."
+      },
+      {
+        "name": "LED kWh",
+        "desc": "Nhấp nháy theo lượng điện năng tác dụng tiêu thụ."
+      },
+      {
+        "name": "LED kVArh",
+        "desc": "Nhấp nháy theo lượng điện năng phản kháng."
+      },
+      {
+        "name": "LED Alarm",
+        "desc": "Sáng hoặc nhấp nháy khi công tơ phát hiện sự kiện bất thường."
+      }
+    ],
+    "lcd": [
+      {
+        "code": "1.8.0",
+        "name": "Tổng điện năng giao",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.1",
+        "name": "Điện năng giao biểu 1",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.2",
+        "name": "Điện năng giao biểu 2",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.3",
+        "name": "Điện năng giao biểu 3",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.0",
+        "name": "Tổng điện năng nhận",
+        "group": "energy"
+      },
+      {
+        "code": "3.8.0",
+        "name": "Điện năng vô công giao",
+        "group": "energy"
+      },
+      {
+        "code": "4.8.0",
+        "name": "Điện năng vô công nhận",
+        "group": "energy"
+      },
+      {
+        "code": "32.7.0",
+        "name": "Điện áp pha A",
+        "group": "voltage"
+      },
+      {
+        "code": "52.7.0",
+        "name": "Điện áp pha B",
+        "group": "voltage"
+      },
+      {
+        "code": "72.7.0",
+        "name": "Điện áp pha C",
+        "group": "voltage"
+      },
+      {
+        "code": "31.7.0",
+        "name": "Dòng điện pha A",
+        "group": "current"
+      },
+      {
+        "code": "51.7.0",
+        "name": "Dòng điện pha B",
+        "group": "current"
+      },
+      {
+        "code": "71.7.0",
+        "name": "Dòng điện pha C",
+        "group": "current"
+      },
+      {
+        "code": "1.7.0",
+        "name": "Công suất tác dụng",
+        "group": "power"
+      },
+      {
+        "code": "3.7.0",
+        "name": "Công suất phản kháng",
+        "group": "power"
+      },
+      {
+        "code": "13.7.0",
+        "name": "Hệ số công suất",
+        "group": "power"
+      },
+      {
+        "code": "14.7.0",
+        "name": "Tần số",
+        "group": "power"
+      },
+      {
+        "code": "96.1.0",
+        "name": "Số Serial",
+        "group": "info"
+      },
+      {
+        "code": "0.9.1",
+        "name": "Thời gian",
+        "group": "info"
+      },
+      {
+        "code": "0.9.2",
+        "name": "Ngày",
+        "group": "info"
+      }
+    ],
+    "guide": [
+      "Kiểm tra công tơ đã được cấp nguồn.",
+      "Kiểm tra màn hình LCD hiển thị bình thường.",
+      "Kiểm tra LED kWh và LED Alarm.",
+      "Kiểm tra cổng Optical.",
+      "Kiểm tra truyền thông RS485.",
+      "Kiểm tra Password và địa chỉ công tơ.",
+      "Đọc thông số tức thời.",
+      "Đọc điện năng.",
+      "Đọc biểu đồ phụ tải.",
+      "Đọc nhật ký sự kiện."
+    ],
+    "errors": [
+      {
+        "error": "LCD không hiển thị",
+        "solution": "Kiểm tra nguồn cấp, cầu chì và điện áp đầu vào."
+      },
+      {
+        "error": "Không đọc được công tơ",
+        "solution": "Kiểm tra Optical, RS485, Password và địa chỉ công tơ."
+      },
+      {
+        "error": "LED Alarm sáng",
+        "solution": "Đọc nhật ký sự kiện để xác định nguyên nhân cảnh báo."
+      },
+      {
+        "error": "Không truyền dữ liệu",
+        "solution": "Kiểm tra dây RS485, modem/DCU và cấu hình truyền thông."
+      }
+    ],
+    "pdf": "assets/pdf/PSMART/PSMART_Meter.pdf"
+  },
+  "OMNI": {
+    "image": "assets/images/METER/omni/meter_omni.png",
+    "status": [
+      {
+        "name": "LCD",
+        "desc": "Hiển thị điện năng, điện áp, dòng điện và các thông số vận hành."
+      },
+      {
+        "name": "Đèn xung kWh",
+        "desc": "Nhấp nháy theo lượng điện năng tiêu thụ."
+      },
+      {
+        "name": "Đèn truyền thông",
+        "desc": "Nhấp nháy khi công tơ đang truyền dữ liệu."
+      },
+      {
+        "name": "Đèn cảnh báo",
+        "desc": "Sáng khi công tơ phát hiện sự cố hoặc có sự kiện bất thường."
+      }
+    ],
+    "lcd": [
+      {
+        "code": "1.8.0",
+        "name": "Tổng điện năng giao",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.1",
+        "name": "Điện năng giao biểu 1",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.2",
+        "name": "Điện năng giao biểu 2",
+        "group": "energy"
+      },
+      {
+        "code": "1.8.3",
+        "name": "Điện năng giao biểu 3",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.0",
+        "name": "Tổng điện năng nhận",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.1",
+        "name": "Điện năng nhận biểu 1",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.2",
+        "name": "Điện năng nhận biểu 2",
+        "group": "energy"
+      },
+      {
+        "code": "2.8.3",
+        "name": "Điện năng nhận biểu 3",
+        "group": "energy"
+      },
+      {
+        "code": "3.8.0",
+        "name": "Điện năng vô công giao",
+        "group": "energy"
+      },
+      {
+        "code": "4.8.0",
+        "name": "Điện năng vô công nhận",
+        "group": "energy"
+      },
+      {
+        "code": "32.7.0",
+        "name": "Điện áp pha A",
+        "group": "voltage"
+      },
+      {
+        "code": "52.7.0",
+        "name": "Điện áp pha B",
+        "group": "voltage"
+      },
+      {
+        "code": "72.7.0",
+        "name": "Điện áp pha C",
+        "group": "voltage"
+      },
+      {
+        "code": "31.7.0",
+        "name": "Dòng điện pha A",
+        "group": "current"
+      },
+      {
+        "code": "51.7.0",
+        "name": "Dòng điện pha B",
+        "group": "current"
+      },
+      {
+        "code": "71.7.0",
+        "name": "Dòng điện pha C",
+        "group": "current"
+      },
+      {
+        "code": "13.7.0",
+        "name": "Hệ số công suất",
+        "group": "power"
+      },
+      {
+        "code": "14.7.0",
+        "name": "Tần số",
+        "group": "power"
+      },
+      {
+        "code": "96.1.0",
+        "name": "Số serial công tơ",
+        "group": "info"
+      }
+    ],
+    "guide": [
+      "Kiểm tra màn hình LCD hiển thị bình thường.",
+      "Kiểm tra nguồn cấp công tơ.",
+      "Kiểm tra đèn báo hoạt động.",
+      "Kiểm tra cổng Optical.",
+      "Kiểm tra đường truyền RS485.",
+      "Kiểm tra địa chỉ công tơ.",
+      "Kiểm tra Password.",
+      "Đọc thông số tức thời.",
+      "Đọc điện năng.",
+      "Đọc sự kiện.",
+      "Đọc biểu đồ phụ tải."
+    ],
+    "errors": [
+      {
+        "error": "Không đọc được công tơ",
+        "solution": "Kiểm tra nguồn, Optical, RS485, Password và địa chỉ công tơ."
+      },
+      {
+        "error": "Sai Password",
+        "solution": "Kiểm tra hoặc cập nhật đúng Password của công tơ."
+      },
+      {
+        "error": "Mất truyền thông",
+        "solution": "Kiểm tra dây RS485, modem và cấu hình truyền thông."
+      },
+      {
+        "error": "LCD không hiển thị",
+        "solution": "Kiểm tra nguồn cấp hoặc thay thế công tơ nếu cần."
+      }
+    ],
+    "pdf": "assets/pdf/OMNI/OMNI_Meter.pdf"
+  }
+}

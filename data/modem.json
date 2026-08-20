@@ -1,0 +1,529 @@
+{
+  "GELEX": {
+    "image": "assets/images/MODEM/GELEX/gelex_modem.png",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Sáng liên tục: Modem đã có nguồn."
+      },
+      {
+        "name": "NET",
+        "desc": "Nhấp nháy: Modem kết nối Server."
+      },
+      {
+        "name": "485",
+        "desc": "Nhấp nháy: Có truyền dữ liệu RS485."
+      }
+    ],
+    "server": "Theo cấu hình EVNHES\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web https://sfw.evnspc.vn.\n2. Chọn Quản lý Modem.\n3. Chọn Cấu hình.\n4. Trên thanh công cụ chọn Modem SENVI-HHM-VSE-GLE.\n5. Chọn Lệnh liên quan IP-Port\n6. Chọn Đọc cấu hình.\n7. Chọn mục IP-Port.\n8. Nhập IP-Port cần chuyển.\n9. Chọn Ghi cấu hình.\n10. Sau khi hiển thị thông báo Thành công.\n11. Chọn Reset.\n",
+    "errors": [
+      {
+        "error": "Mất nguồn",
+        "solution": "Kiểm tra adapter, nguồn cấp và jack nguồn."
+      },
+      {
+        "error": "Mất kết nối Server",
+        "solution": "Kiểm tra SIM, sóng GSM và APN."
+      },
+      {
+        "error": "Không đọc công tơ",
+        "solution": "Kiểm tra dây RS485, cực A/B và đúng loại công tơ."
+      },
+      {
+        "error": "Đèn NET tắt",
+        "solution": "Kiểm tra SIM hoặc thay modem."
+      },
+      {
+        "error": "Modem treo",
+        "solution": "Ngắt nguồn khoảng 10 giây rồi cấp lại."
+      }
+    ],
+    "guide": [
+      "Kiểm tra Adapter hoặc nguồn cấp.",
+      "POWER phải sáng liên tục.",
+      "NETWORK phải sáng hoặc chớp.",
+      "READY phải sáng.",
+      "LOCAL hoặc 485 phải chớp khi truyền thông.",
+      "Kiểm tra SIM.",
+      "Kiểm tra anten GSM.",
+      "Kiểm tra IP - Port Server.",
+      "Kiểm tra dây RS485.",
+      "Kiểm tra địa chỉ và mật khẩu công tơ.",
+      "Đọc thử bằng MDIS.",
+      "Khởi động lại modem.",
+      "Nếu vẫn lỗi thì thay modem."
+    ],
+    "wiring": [
+      "assets/images/MODEM/GELEX/wiring_ce11.jpg",
+      "assets/images/MODEM/GELEX/wiring_elster.jpg",
+      "assets/images/MODEM/GELEX/wiring_gelex1p.jpg",
+      "assets/images/MODEM/GELEX/wiring_gelex3p_me41.jpg",
+      "assets/images/MODEM/GELEX/wiring_gelex3p_me42.jpg",
+      "assets/images/MODEM/GELEX/wiring_hhm_dts27.jpg",
+      "assets/images/MODEM/GELEX/wiring_omni3p.jpg",
+      "assets/images/MODEM/GELEX/wiring_psmart1p.jpg",
+      "assets/images/MODEM/GELEX/wiring_psmart3p.jpg",
+      "assets/images/MODEM/GELEX/wiring_vse1p.jpg",
+      "assets/images/MODEM/GELEX/wiring_vse3p.jpg"
+    ],
+    "pdf": "assets/pdf/GELEX/GELEX_Modem.pdf"
+  },
+  "HHM": {
+    "image": "assets/images/MODEM/HHM/hhm_modem.png",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Đèn nguồn. Sáng liên tục khi modem hoạt động bình thường."
+      },
+      {
+        "name": "LOCAL",
+        "desc": "Đèn truyền thông RS485 với công tơ. Nếu tắt: kiểm tra dây RS485 hoặc cổng 485 công tơ."
+      },
+      {
+        "name": "HES",
+        "desc": "Đèn kết nối Server EVNHES. Sáng hoặc chớp khi truyền dữ liệu."
+      },
+      {
+        "name": "NETWORK",
+        "desc": "Đèn trạng thái SIM/GPRS/4G. Sáng lin tục là bình thường."
+      }
+    ],
+    "server": "Theo cấu hình EVNHES\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web https://sfw.evnspc.vn.\n2. Chọn Quản lý Modem.\n3. Chọn Cấu hình.\n4. Trên thanh công cụ chọn Modem SENVI-HHM-VSE-GLE.\n5. Chọn Lệnh liên quan IP-Port\n6. Chọn Đọc cấu hình.\n7. Chọn mục IP-Port.\n8. Nhập IP-Port cần chuyển.\n9. Chọn Ghi cấu hình.\n10. Sau khi hiển thị thông báo Thành công.\n11. Chọn Reset.\n",
+    "errors": [
+      {
+        "error": "Mất nguồn modem",
+        "solution": "Kiểm tra nguồn cấp, bộ nguồn, jack nguồn hoặc thay Adapter."
+      },
+      {
+        "error": "Sai mật khẩu công tơ",
+        "solution": "Cập nhật đúng mật khẩu đọc trên EVNHES/MDIS."
+      },
+      {
+        "error": "Đèn LOCAL tắt",
+        "solution": "Kiểm tra dây RS485, cổng 485 công tơ hoặc thay công tơ."
+      },
+      {
+        "error": "Mất đèn HES hoặc NETWORK",
+        "solution": "Kiểm tra SIM, vệ sinh SIM hoặc thay SIM mới."
+      },
+      {
+        "error": "Online nhưng không đọc được công tơ",
+        "solution": "Kiểm tra công tơ, màn hình, thử đọc bằng MDIS."
+      },
+      {
+        "error": "Modem bị treo ",
+        "solution": "Rút nguồn khoảng 10 giây rồi cấp nguồn lại."
+      }
+    ],
+    "guide": [
+      "Kiểm tra nguồn Adapter 12V.",
+      "Kiểm tra đèn POWER.",
+      "Kiểm tra đèn LOCAL.",
+      "Kiểm tra đèn NETWORK.",
+      "Kiểm tra đèn HES.",
+      "Đo thông mạch dây RS485.",
+      "Kiểm tra cực A/B đúng thứ tự.",
+      "Đọc thử công tơ bằng MDIS.",
+      "Kiểm tra mật khẩu đọc.",
+      "Khởi động lại modem.",
+      "Nếu vẫn lỗi thì thay modem."
+    ],
+    "wiring": [
+      "assets/images/MODEM/HHM/wiring_elster.jpg",
+      "assets/images/MODEM/HHM/wiring_hhm1pGT.jpg",
+      "assets/images/MODEM/HHM/wiring_hhm3pGT.jpg",
+      "assets/images/MODEM/HHM/wiring_gelex1pTT.jpg",
+      "assets/images/MODEM/HHM/wiring_gelex3pGT.jpg",
+      "assets/images/MODEM/HHM/wiring_vse1tGT.jpg",
+      "assets/images/MODEM/HHM/wiring_vse1tTT.jpg",
+      "assets/images/MODEM/HHM/wiring_vse3tGT.jpg",
+      "assets/images/MODEM/HHM/wiring_vse3tTT.jpg",
+      "assets/images/MODEM/HHM/wiring_psmart3pGT.jpg",
+      "assets/images/MODEM/HHM/wiring_ce11.jpg"
+    ],
+    "pdf": "assets/pdf/HHM/HHM_Modem.pdf"
+  },
+  "IFC-84K": {
+    "image": "assets/images/MODEM/IFC-84K/ifc84k_modem.png",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Đèn nguồn. Luôn sáng khi modem hoạt động."
+      },
+      {
+        "name": "NET",
+        "desc": "Đèn trạng thái mạng GSM/GPRS. Chớp là bình thường."
+      },
+      {
+        "name": "COM",
+        "desc": "Đèn truyền thông với công tơ qua RS485."
+      }
+    ],
+    "server": "Theo cấu hình EVNHES\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web https://sfw.evnspc.vn.\n2. Chọn Quản lý Modem.\n3. Chọn Cấu hình.\n4. Trên thanh công cụ chọn Modem IFC-VT-TSI.\n5. Chọn Đọc cấu hình.\n6. Chọn mục IP-Port.\n7. Nhập IP-Port cần chuyển.\n8. Chọn Ghi cấu hình.\n9. Sau khi hiển thị thông báo Thành công.\n10. Chọn Reset.\n",
+    "errors": [
+      {
+        "error": "Mất nguồn",
+        "solution": "Kiểm tra Adapter, jack nguồn hoặc thay nguồn."
+      },
+      {
+        "error": "Sai mật khẩu công tơ",
+        "solution": "Cập nhật đúng mật khẩu công tơ trên hệ thống."
+      },
+      {
+        "error": "Đèn NET chớp liên tục",
+        "solution": "Kiểm tra SIM, sóng GSM hoặc thay SIM."
+      },
+      {
+        "error": "Không truyền thông RS485",
+        "solution": "Kiểm tra dây RS485, cổng 485 công tơ."
+      },
+      {
+        "error": "Đọc công tơ ERROR hoặc UNKNOWN",
+        "solution": "Kiểm tra công tơ, thay công tơ nếu cần."
+      },
+      {
+        "error": "Modem bị treo",
+        "solution": "Rút nguồn khoảng 10 giây rồi cấp nguồn lại."
+      }
+    ],
+    "guide": [
+      "Kiểm tra nguồn Adapter.",
+      "Kiểm tra đèn POWER.",
+      "Kiểm tra đèn NET.",
+      "Kiểm tra đèn COM.",
+      "Kiểm tra dây RS485.",
+      "Đo thông mạch dây truyền thông.",
+      "Kiểm tra cực A/B.",
+      "Đọc thử công tơ bằng MDIS.",
+      "Kiểm tra mật khẩu đọc.",
+      "Khởi động lại modem.",
+      "Nếu vẫn lỗi thì thay modem."
+    ],
+    "wiring": [
+      "assets/images/MODEM/IFC-84K/wiring_elster.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_ce11.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_gelex1pTT.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_gelex3p.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_hhm1pGT.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_hhm3pTT.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_hhmdts27TT.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_hhmdts27GT.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_psmart1pGT.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_psmart3p.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_vse1tGT.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_vse1tTT.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_vse3tGT.jpg",
+      "assets/images/MODEM/IFC-84K/wiring_vse3tTT.jpg"
+    ],
+    "pdf": "assets/pdf/PSMART/IFC_84K_Modem.pdf"
+  },
+  "IFC-2032": {
+    "image": "assets/images/MODEM/IFC-2032/ifc2032_modem.png",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Sáng đỏ: Modem đã được cấp nguồn."
+      },
+      {
+        "name": "STATUS",
+        "desc": "Nháy nhanh liên tục: Modem đang thực hiện kết nối tới Server."
+      },
+      {
+        "name": "STATUS",
+        "desc": "Nháy 3 giây một lần: Modem đã kết nối tới Server."
+      },
+      {
+        "name": "STATUS",
+        "desc": "Sáng và không nháy: Hiện tượng modem bị treo."
+      },
+      {
+        "name": "READY",
+        "desc": "Nháy không ổn định: Modem đang kết nối tới mạng di động."
+      },
+      {
+        "name": "READY",
+        "desc": "Nháy đều và ổn định với tần suất 0.5 giây/lần: Đã sẵn sàng và thiết bị đã đăng nhập mạng di động."
+      },
+      {
+        "name": "READING",
+        "desc": "Nháy 1 giây một lần: Modem đang đọc dữ liệu công tơ."
+      },
+      {
+        "name": "READING",
+        "desc": "Sáng và không nháy: Modem đọc được dữ liệu công tơ."
+      },
+      {
+        "name": "READING",
+        "desc": "LED tắt: Modem không đọc được dữ liệu công tơ."
+      }
+    ],
+    "server": "Theo cấu hình EVNHES\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web SFW.\n2. Chọn Quản lý Modem.\n3. Chọn Cấu hình.\n4. Trên thanh công cụ chọn Modem IFC-VT-TSI.\n5. Chọn Đọc cấu hình.\n6. Chọn mục IP-Port.\n7. Nhập IP-Port cần chuyển.\n8. Chọn Ghi cấu hình.\n9. Sau khi hiển thị thông báo Thành công.\n10. Chọn Reset.\n",
+    "errors": [
+      {
+        "error": "Mất nguồn",
+        "solution": "Kiểm tra nguồn AC 220V, dây nguồn, cầu chì và nguồn Adapter."
+      },
+      {
+        "error": "Không kết nối Server",
+        "solution": "Kiểm tra SIM, anten, sóng GSM và cấu hình IP-Port Server."
+      },
+      {
+        "error": "Không đọc được công tơ",
+        "solution": "Kiểm tra dây RS485, cổng truyền thông và mật khẩu công tơ."
+      },
+      {
+        "error": "Online nhưng không đọc được công tơ",
+        "solution": "Đọc thử bằng MDIS. Nếu báo ERROR hoặc UNKNOWN thì kiểm tra hoặc thay công tơ."
+      },
+      {
+        "error": "Modem bị treo",
+        "solution": "Ngắt nguồn khoảng 10 giây rồi cấp nguồn lại."
+      }
+    ],
+    "guide": [
+      "Kiểm tra nguồn Adapter.",
+      "Kiểm tra đèn POWER.",
+      "Kiểm tra đèn STATUS.",
+      "Kiểm tra đèn READY.",
+      "Kiểm tra đèn READING.",
+      "Kiểm tra SIM.",
+      "Kiểm tra dây RS485.",
+      "Đo thông mạch dây truyền thông.",
+      "Kiểm tra cực A/B.",
+      "Đọc thử công tơ bằng MDIS.",
+      "Kiểm tra mật khẩu công tơ.",
+      "Khởi động lại modem.",
+      "Nếu vẫn lỗi thì thay modem."
+    ],
+    "wiring": [
+      "assets/images/MODEM/IFC-2032/wiring_elster.jpg",
+      "assets/images/MODEM/IFC-2032/wiring_gelex3p.jpg",
+      "assets/images/MODEM/IFC-2032/wiring_hhm1p.jpg",
+      "assets/images/MODEM/IFC-2032/wiring_hhm3p.jpg",
+      "assets/images/MODEM/IFC-2032/wiring_omni3p.jpg",
+      "assets/images/MODEM/IFC-2032/wiring_psmart1p.jpg",
+      "assets/images/MODEM/IFC-2032/wiring_psmart3p.jpg",
+      "assets/images/MODEM/IFC-2032/wiring_vse1t.jpg"
+    ],
+    "pdf": "assets/pdf/PSMART/IFC_2032_Modem.pdf"
+  },
+  "NTT": {
+    "image": "assets/images/MODEM/NTT/ntt_modem.png",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Đèn đỏ sáng: Modem đã được cấp nguồn."
+      },
+      {
+        "name": "NETWORK",
+        "desc": "Nháy nhanh: đang kết nối Server.\nNháy chậm (3 giây/lần): đã kết nối Server thành công."
+      },
+      {
+        "name": "READY",
+        "desc": "Đèn xanh nháy nhanh: Modem sẵn sàng truyền thông."
+      }
+    ],
+    "server": "Theo cấu hình EVNHES\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web https://sfw.evnspc.vn.\n2. Chọn Quản lý Modem.\n3. Chọn Cấu hình.\n4. Trên thanh công cụ chọn Modem IFC-VT-TSI.\n5. Chọn Đọc cấu hình.\n6. Chọn mục IP-Port.\n7. Nhập IP-Port cần chuyển.\n8. Chọn Ghi cấu hình.\n9. Sau khi hiển thị thông báo Thành công.\n10. Chọn Reset.\n",
+    "errors": [
+      {
+        "error": "Mất nguồn",
+        "solution": "Kiểm tra nguồn AC 220V, dây nguồn, cầu chì, thay nguồn nếu hư."
+      },
+      {
+        "error": "Mất đèn NETWORK",
+        "solution": "Kiểm tra SIM, anten, sóng GSM, IP-Port Server."
+      },
+      {
+        "error": "Không đọc được công tơ",
+        "solution": "Kiểm tra dây RS485, cổng truyền thông công tơ, mật khẩu công tơ."
+      },
+      {
+        "error": "Modem online nhưng MDIS báo ERROR hoặc UNKNOWN",
+        "solution": "Kiểm tra công tơ, thay công tơ nếu lỗi."
+      },
+      {
+        "error": "Modem treo",
+        "solution": "Ngắt nguồn khoảng 10 giây rồi cấp điện lại."
+      },
+      {
+        "error": "Không khắc phục được",
+        "solution": "Thay modem khác."
+      }
+    ],
+    "guide": [
+      "Lắp anten trước khi cấp nguồn.",
+      "Lắp đúng chiều SIM.",
+      "Đấu nguồn AC đúng quy định.",
+      "Quan sát đèn POWER.",
+      "Quan sát đèn NETWORK.",
+      "Quan sát đèn READY.",
+      "Kiểm tra dây RS485 hoặc DB25.",
+      "Đọc thử bằng MDIS.",
+      "Nếu vẫn lỗi thì thay modem."
+    ],
+    "wiring": [
+      "assets/images/MODEM/NTT/wiring_elster.png",
+      "assets/images/MODEM/NTT/wiring_dts27.png",
+      "assets/images/MODEM/NTT/wiring_vse3t.png",
+      "assets/images/MODEM/NTT/wiring_hhm.png",
+      "assets/images/MODEM/NTT/wiring_psmart.png",
+      "assets/images/MODEM/NTT/wiring_gelex.png"
+    ],
+    "pdf": "assets/pdf/NTT/NTT_Modem.pdf"
+  },
+  "SENVI": {
+    "image": "assets/images/MODEM/SENVI/senvi_modem.png",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Đèn nguồn. Sáng liên tục khi modem được cấp nguồn."
+      },
+      {
+        "name": "NETWORK",
+        "desc": "Đèn kết nối mạng GSM/GPRS. Sáng hoặc chớp khi modem đã đăng ký mạng."
+      },
+      {
+        "name": "HES",
+        "desc": "Đèn kết nối đến hệ thống HES. Sáng khi modem đã kết nối Server."
+      },
+      {
+        "name": "LOCAL",
+        "desc": "Đèn truyền thông với công tơ qua RS485. Chớp khi đang đọc dữ liệu."
+      }
+    ],
+    "server": "Theo cấu hình EVNHES\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web https://sfw.evnspc.vn.\n2. Chọn Quản lý Modem.\n3. Chọn Cấu hình.\n4. Trên thanh công cụ chọn Modem SENVI-HHM-VSE-GLE.\n5. Chọn Lệnh liên quan IP-Port\n6. Chọn Đọc cấu hình.\n7. Chọn mục IP-Port.\n8. Nhập IP-Port cần chuyển.\n9. Chọn Ghi cấu hình.\n10. Sau khi hiển thị thông báo Thành công.\n11. Chọn Reset.\n",
+    "errors": [
+      {
+        "error": "Mất nguồn",
+        "solution": "Kiểm tra Adapter, jack nguồn hoặc thay nguồn."
+      },
+      {
+        "error": "Sai mật khẩu công tơ",
+        "solution": "Cập nhật lại đúng mật khẩu công tơ."
+      },
+      {
+        "error": "Tắt đèn LOCAL",
+        "solution": "Kiểm tra dây RS485 hoặc cổng RS485 của công tơ."
+      },
+      {
+        "error": "Tắt 2 đèn NETWORK và HES",
+        "solution": "Kiểm tra SIM, vệ sinh SIM hoặc thay SIM mới."
+      },
+      {
+        "error": "Online nhưng không đọc được công tơ",
+        "solution": "Đọc thử bằng MDIS, nếu báo ERROR hoặc UNKNOWN thì thay công tơ."
+      },
+      {
+        "error": "Đứng cả 4 đèn",
+        "solution": "Rút nguồn khoảng 10 giây rồi cấp nguồn lại."
+      },
+      {
+        "error": "Không khắc phục được",
+        "solution": "Thay modem mới."
+      }
+    ],
+    "guide": [
+      "Kiểm tra Adapter.",
+      "Kiểm tra đèn POWER.",
+      "Kiểm tra đèn NETWORK.",
+      "Kiểm tra đèn HES.",
+      "Kiểm tra đèn LOCAL.",
+      "Kiểm tra SIM.",
+      "Kiểm tra dây RS485.",
+      "Đo thông mạch dây truyền thông.",
+      "Kiểm tra cực A/B.",
+      "Đọc thử công tơ bằng MDIS.",
+      "Khởi động lại modem.",
+      "Nếu vẫn lỗi thì thay modem."
+    ],
+    "wiring": [
+      "assets/images/MODEM/SENVI/wiring_elster.jpg",
+      "assets/images/MODEM/SENVI/wiring_ce11_psmart3p.jpg",
+      "assets/images/MODEM/SENVI/wiring_gelex.jpg",
+      "assets/images/MODEM/SENVI/wiring_hhm.jpg",
+      "assets/images/MODEM/SENVI/wiring_omni.jpg",
+      "assets/images/MODEM/SENVI/wiring_vse.jpg"
+    ],
+    "pdf": "assets/pdf/SENVI/SENVI_Modem.pdf"
+  },
+  "OMNI": {
+    "image": "assets/images/MODEM/OMNI/omni_modem.png",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Sáng: Modem đã được cấp nguồn."
+      },
+      {
+        "name": "SIM",
+        "desc": "Chớp tắt chu kỳ 0.3s: Modem kết nối SIM và khởi tạo GPRS/3G/4G thành công."
+      },
+      {
+        "name": "SIM",
+        "desc": "Sáng: Modem không nhận SIM hoặc chưa lắp SIM."
+      },
+      {
+        "name": "SIM",
+        "desc": "Chớp tắt chu kỳ 1s: Modem khởi tạo GPRS/3G/4G không thành công hoặc sóng yếu."
+      },
+      {
+        "name": "HES",
+        "desc": "Chớp tắt chu kỳ 0.3s: Modem đã kết nối HES thành công."
+      },
+      {
+        "name": "HES",
+        "desc": "Chớp tắt chu kỳ 0.5s: Modem chưa kết nối đến HES."
+      },
+      {
+        "name": "TXD/RXD",
+        "desc": "Sáng và chớp tắt: Modem đã kết nối công tơ thành công và đang đọc dữ liệu."
+      },
+      {
+        "name": "TXD/RXD",
+        "desc": "Không sáng: Modem chưa kết nối công tơ."
+      }
+    ],
+    "server": "Theo cấu hình EVNHES\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web https://sfw.evnspc.vn.\n2. Chọn Quản lý Modem.\n3. Chọn Cấu hình.\n4. Trên thanh công cụ chọn Modem SENVI-HHM-VSE-GLE.\n5. Chọn Lệnh liên quan IP-Port\n6. Chọn Đọc cấu hình.\n7. Chọn mục IP-Port.\n8. Nhập IP-Port cần chuyển.\n9. Chọn Ghi cấu hình.\n10. Sau khi hiển thị thông báo Thành công.\n11. Chọn Reset.\n",
+    "errors": [
+      {
+        "error": "POWER không sáng",
+        "solution": "Kiểm tra Adapter, nguồn cấp, jack nguồn và đầu nối nguồn DC."
+      },
+      {
+        "error": "SIM sáng liên tục",
+        "solution": "Kiểm tra lại SIM, chiều lắp SIM và tình trạng nhận SIM của modem."
+      },
+      {
+        "error": "SIM chớp 1 giây/lần",
+        "solution": "Kiểm tra sóng di động, SIM và cấu hình GPRS/3G/4G."
+      },
+      {
+        "error": "HES không kết nối",
+        "solution": "Kiểm tra cấu hình IP, PORT, APN và trạng thái mạng di động."
+      },
+      {
+        "error": "TXD/RXD không sáng",
+        "solution": "Kiểm tra dây kết nối công tơ, cổng RS485 và tình trạng công tơ."
+      },
+      {
+        "error": "Modem online nhưng không đọc được công tơ",
+        "solution": "Kiểm tra cáp giao tiếp, loại công tơ và kết nối RS485."
+      }
+    ],
+    "guide": [
+      "Lắp SIM đúng chiều và chắc chắn vào khay SIM.",
+      "Gắn anten vào đầu nối anten của modem.",
+      "Kết nối cáp giao tiếp giữa modem và công tơ.",
+      "Cấp nguồn cho Adapter.",
+      "Kết nối nguồn DC từ Adapter vào modem.",
+      "Kiểm tra LED POWER.",
+      "Kiểm tra LED SIM.",
+      "Kiểm tra LED HES.",
+      "Kiểm tra LED TXD/RXD.",
+      "Kiểm tra kết nối modem với công tơ.",
+      "Cố định anten tại vị trí có tín hiệu tốt.",
+      "Cố định modem gọn gàng và chắc chắn."
+    ],
+    "wiring": [],
+    "pdf": "assets/pdf/OMNI/OMNI_Modem.pdf"
+  }
+}

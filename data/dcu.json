@@ -1,0 +1,352 @@
+{
+  "GELEX": {
+    "name": "GELEX DCU",
+    "image": "assets/images/DCU/Gelex/Gelex_DCU.png",
+    "pdf": "assets/pdf/GELEX/GELEX_DCU.pdf",
+    "server": "113.160.154.241:7006\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web SFW.\n2. Chọn Quản lý DCU.\n3. Chọn Cấu hình.\n4. Chọn Kiểm tra thông tin.\n5. Nhập số No DCU.\n6. Chọn Lấy thông tin.\n7. Kiểm tra thông số.\n8. Trong mục Thao tác chọn Đọc IP-Port.\n9. Nhấn Thực hiện.\n10. Nhập IP-Port cần chuyển.\n11. Trong mục Thao tác chọn Ghi IP-Port.\n12. Nhấn Thực hiện.\n13. Khi hiển thị thông báo Thành công.\n14. Trong mục Thao tác chọn Reset.\n",
+    "status": [
+      {
+        "name": "RUN",
+        "desc": "Chớp nhanh liên tục: DCU hoạt động bình thường"
+      },
+      {
+        "name": "NET",
+        "desc": "Sáng liên tục: Đã nhận SIM và kết nối mạng"
+      },
+      {
+        "name": "485",
+        "desc": "Chớp khi có truyền thông với công tơ"
+      }
+    ],
+    "errors": [
+      {
+        "error": "RUN chớp chậm 1s/lần hoặc 3s/lần",
+        "solution": "DCU không online"
+      },
+      {
+        "error": "NET tắt",
+        "solution": "Không nhận SIM"
+      }
+    ],
+    "guide": [
+      "Kiểm tra đèn RUN nhấp nháy nhanh.",
+      "Kiểm tra đèn NET sáng liên tục.",
+      "Kiểm tra đèn RS485 nhấp nháy.",
+      "Kiểm tra IP-Port.",
+      "Kiểm tra SIM còn Data."
+    ],
+    "wiring": [
+      "assets/images/DCU/Gelex/wiring_elster.jpg",
+      "assets/images/DCU/Gelex/wiring_gelex3p.jpg",
+      "assets/images/DCU/Gelex/wiring_hhm38.jpg",
+      "assets/images/DCU/Gelex/wiring_ifc_vse1t.jpg",
+      "assets/images/DCU/Gelex/wiring_vse3t.jpg"
+    ]
+  },
+  "HHM": {
+    "name": "HHM DCU",
+    "image": "assets/images/DCU/HHM/DCU_Hhm.png",
+    "pdf": "assets/pdf/HHM/HHM_DCU.pdf",
+    "server": "118.069.035.119:55097\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web SFW.\n2. Chọn Quản lý DCU.\n3. Chọn Cấu hình.\n4. Chọn Kiểm tra thông tin.\n5. Nhập số No DCU.\n6. Chọn Lấy thông tin.\n7. Kiểm tra thông số.\n8. Trong mục Thao tác chọn Đọc IP-Port.\n9. Nhấn Thực hiện.\n10. Nhập IP-Port cần chuyển.\n11. Trong mục Thao tác chọn Ghi IP-Port.\n12. Nhấn Thực hiện.\n13. Khi hiển thị thông báo Thành công.\n14. Trong mục Thao tác chọn Reset.\n",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Đèn nguồn sáng khi DCU hoạt động bình thường"
+      },
+      {
+        "name": "NET",
+        "desc": "Báo trạng thái kết nối GPRS/3G/4G"
+      },
+      {
+        "name": "PLC",
+        "desc": "Báo trạng thái truyền dữ liệu PLC"
+      },
+      {
+        "name": "MÀN HÌNH",
+        "desc": "Góc trên bên trái phải hiển thị cột sóng và biểu tượng 4G. Nếu mất thì DCU không online."
+      },
+      {
+        "name": "THỜI GIAN",
+        "desc": "Ngày giờ hiển thị đúng là bình thường. Nếu sai ngày giờ thì pin RTC sắp hết hoặc đã hết."
+      }
+    ],
+    "errors": [
+      {
+        "error": "Đèn NET tắt",
+        "solution": "DCU không nhận SIM, kiểm tra SIM, data hoặc khe SIM."
+      },
+      {
+        "error": "Đèn POWER trên Module SIM tắt",
+        "solution": "Hỏng nguồn Module SIM."
+      },
+      {
+        "error": "Đèn POWER trên Module PLC tắt",
+        "solution": "Hỏng nguồn Module PLC."
+      },
+      {
+        "error": "Mất cột sóng hoặc biểu tượng 4G trên màn hình",
+        "solution": "DCU không có sóng hoặc không có data nên không online."
+      },
+      {
+        "error": "Ngày giờ trên màn hình sai",
+        "solution": "Pin RTC sắp hết hoặc đã hết."
+      },
+      {
+        "error": "RS485-1 hoặc RS485-2 sáng đỏ đứng",
+        "solution": "Đấu sai dây tín hiệu RS485 hoặc mất truyền thông công tơ."
+      },
+      {
+        "error": "Đèn KẾT NỐI màu đỏ",
+        "solution": "DCU bị mất kết nối HES."
+      },
+      {
+        "error": "Đèn TÍN HIỆU màu đỏ",
+        "solution": "Tín hiệu GSM/4G yếu."
+      }
+    ],
+    "wiring": [
+      "assets/images/DCU/HHM/wiring_hhm3pGT.jpg",
+      "assets/images/DCU/HHM/wiring_omni1pGT.jpg",
+      "assets/images/DCU/HHM/wiring_vse3t.jpg",
+      "assets/images/DCU/HHM/wiring_vse1t.jpg",
+      "assets/images/DCU/HHM/wiring_gelex3pGT.jpg",
+      "assets/images/DCU/HHM/wiring_Elster.jpg",
+      "assets/images/DCU/HHM/wiring_psmart1pGT.jpg"
+    ],
+    "guide": [
+      "Kiểm tra màn hình phải có cột sóng và biểu tượng 4G ở góc trên bên trái.",
+      "Nếu mất cột sóng hoặc mất 4G thì DCU sẽ không online.",
+      "Ngày giờ hiển thị phải đúng.",
+      "Nếu ngày giờ sai thì pin RTC của DCU sắp hết hoặc đã hết.",
+      "Nhấn giữ nút ENTER đến khi màn hình nháy một lần.",
+      "Sau khi màn hình chuyển trang, dùng nút LÊN hoặc XUỐNG để xem thông tin.",
+      "Kiểm tra IP-Port cấu hình.",
+      "Kiểm tra trạng thái kết nối HES.",
+      "Kiểm tra trạng thái truyền thông RS485.",
+      "Kiểm tra cường độ sóng GSM/4G."
+    ]
+  },
+  "PSMART": {
+    "name": "PSMART DCU",
+    "image": "assets/images/DCU/Psmart/DCU_Psmart.png",
+    "pdf": "assets/pdf/PSMART/PSMART_DCU.pdf",
+    "server": "113.160.233.28:8106\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web SFW.\n2. Chọn Quản lý DCU.\n3. Chọn Cấu hình.\n4. Chọn DCU Psmart.\n5. Nhập số No DCU.\n6. Chọn Đọc cấu hình.\n7. Nhập IP-Port cần chuyển.\n8. Chọn Ghi cấu hình.\n9. Khi hiển thị thông báo Thành công.\n10. Chọn Reset.\n",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Đèn đỏ sáng: DCU đã được cấp nguồn."
+      },
+      {
+        "name": "READY",
+        "desc": "Đèn sáng: DCU đã kết nối mạng GSM/3G/4G."
+      },
+      {
+        "name": "STATUS",
+        "desc": "Nhấp nháy nhanh: DCU đang kết nối đến Server. Nhấp nháy 3 giây/lần: DCU đã kết nối Server thành công."
+      },
+      {
+        "name": "READ485",
+        "desc": "Nhấp nháy khi DCU đang giao tiếp RS485 với công tơ."
+      }
+    ],
+    "errors": [
+      {
+        "error": "POWER tắt",
+        "solution": "Kiểm tra nguồn cấp AC cho DCU."
+      },
+      {
+        "error": "READY tắt",
+        "solution": "Kiểm tra SIM, anten hoặc gói Data."
+      },
+      {
+        "error": "STATUS nhấp nháy liên tục",
+        "solution": "DCU chưa kết nối được Server."
+      },
+      {
+        "error": "DCU Offline",
+        "solution": "Kiểm tra nguồn, SIM, anten, IP-Port và khởi động lại DCU."
+      },
+      {
+        "error": "DCU Online nhưng không đọc công tơ",
+        "solution": "Kiểm tra ID công tơ, TYPE công tơ, Module PLC và cấu hình đọc."
+      }
+    ],
+    "guide": [
+      "Kiểm tra đèn POWER phải sáng.",
+      "Kiểm tra đèn READY phải sáng.",
+      "STATUS nhấp nháy 3 giây/lần là DCU đã Online.",
+      "STATUS nhấp nháy nhanh liên tục là DCU chưa kết nối Server.",
+      "Kiểm tra anten đã siết chặt.",
+      "Kiểm tra SIM còn Data.",
+      "Kiểm tra IP-Port bằng phần mềm MCF.",
+      "Có thể kết nối USB-RS485 để cấu hình khi DCU Offline."
+    ],
+    "wiring": [
+      "assets/images/DCU/Psmart/wiring_vse1t.jpg",
+      "assets/images/DCU/Psmart/wiring_ce11.jpg",
+      "assets/images/DCU/Psmart/wiring_dec_psmart.jpg",
+      "assets/images/DCU/Psmart/wiring_psmart.jpg",
+      "assets/images/DCU/Psmart/wiring_vse3t.jpg",
+      "assets/images/DCU/Psmart/wiring_hhm.jpg",
+      "assets/images/DCU/Psmart/wiring_gelex.jpg",
+      "assets/images/DCU/Psmart/wiring_elster.jpg",
+      "assets/images/DCU/Psmart/wiring_elster2.jpg"
+    ]
+  },
+  "VSE": {
+    "name": "DCU VSE",
+    "image": "assets/images/DCU/VSE/DCU_VSE.png",
+    "pdf": "assets/pdf/VINASINO/VINASINO_DCU.pdf",
+    "server": "14.161.1.194:8003\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web SFW.\n2. Chọn Quản lý DCU.\n3. Chọn Cấu hình.\n4. Chọn Kiểm tra thông tin.\n5. Nhập số No DCU.\n6. Chọn Lấy thông tin.\n7. Kiểm tra thông số.\n8. Trong mục Thao tác chọn Đọc IP-Port.\n9. Nhấn Thực hiện.\n10. Nhập IP-Port cần chuyển.\n11. Trong mục Thao tác chọn Ghi IP-Port.\n12. Nhấn Thực hiện.\n13. Khi hiển thị thông báo Thành công.\n14. Trong mục Thao tác chọn Reset.\n",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Đèn POWER sáng: DCU được cấp nguồn bình thường."
+      },
+      {
+        "name": "WARN",
+        "desc": "Đèn WARN chớp liên tục: DCU hoạt động bình thường. Nếu sáng liên tục: DCU bị treo, cần khởi động lại."
+      },
+      {
+        "name": "READ 485",
+        "desc": "Nhấp nháy khi DCU đọc dữ liệu từ công tơ."
+      },
+      {
+        "name": "CASCADE 485",
+        "desc": "Nhấp nháy khi truyền dữ liệu PLC."
+      },
+      {
+        "name": "MODULE PLC",
+        "desc": "Power sáng; TR, A, B, C nhấp nháy là hoạt động bình thường. Nếu A, B, C sáng liên tục là Module PLC bị treo."
+      },
+      {
+        "name": "MODULE GPRS",
+        "desc": "Power sáng; T/R nhấp nháy khi truyền dữ liệu; NET chớp liên tục là kết nối mạng bình thường."
+      }
+    ],
+    "errors": [
+      {
+        "error": "Đèn WARN sáng liên tục",
+        "solution": "DCU bị treo, tắt nguồn và cấp nguồn lại."
+      },
+      {
+        "error": "Đèn NET tắt",
+        "solution": "Kiểm tra SIM, tiếp xúc Module GPRS hoặc SIM không có Data."
+      },
+      {
+        "error": "Đèn NET chớp chậm hoặc không chớp",
+        "solution": "Kiểm tra Module GPRS và tín hiệu mạng."
+      },
+      {
+        "error": "Đèn A-B-C sáng liên tục",
+        "solution": "Module PLC bị treo, khởi động lại DCU."
+      },
+      {
+        "error": "Không thu thập được dữ liệu",
+        "solution": "Kiểm tra nguồn, anten GPRS, SIM, dây RS485 và kết nối PLC."
+      }
+    ],
+    "wiring": [
+      "assets/images/DCU/VSE/wiring_vse1t.jpg",
+      "assets/images/DCU/VSE/wiring_ce11.jpg",
+      "assets/images/DCU/VSE/wiring_psmart.jpg",
+      "assets/images/DCU/VSE/wiring_elster.jpg",
+      "assets/images/DCU/VSE/wiring_dec_psmart.jpg",
+      "assets/images/DCU/VSE/wiring_omni.jpg",
+      "assets/images/DCU/VSE/wiring_vse3t.jpg",
+      "assets/images/DCU/VSE/wiring_hhm.jpg",
+      "assets/images/DCU/VSE/wiring_gelex.jpg"
+    ],
+    "guide": [
+      "Kiểm tra đèn POWER phải sáng.",
+      "Đèn WARN phải chớp liên tục.",
+      "Đèn NET trên Module GPRS phải chớp liên tục.",
+      "Đèn A-B-C trên Module PLC phải chớp.",
+      "Nếu WARN sáng liên tục: khởi động lại DCU.",
+      "Nếu NET tắt hoặc chớp chậm: kiểm tra SIM và Module GPRS.",
+      "Nếu A-B-C sáng liên tục: Module PLC bị treo.",
+      "Kiểm tra đủ nguồn 3 pha và dây trung tính.",
+      "Kiểm tra anten GPRS lắp đúng vị trí.",
+      "Kiểm tra dây RS485 đấu đúng cực và chắc chắn."
+    ]
+  },
+  "OMNI": {
+    "name": "OMNI DCU",
+    "image": "assets/images/DCU/Omni/DCU_omni.png",
+    "pdf": "assets/pdf/OMNI/OMNI_DCU.pdf",
+    "server": "14.241.239.15:9913\n\nHƯỚNG DẪN ĐỔI IP-PORT\n\n1. Đăng nhập vào trang web SFW.\n2. Chọn Quản lý DCU.\n3. Chọn Cấu hình.\n4. Chọn Kiểm tra thông tin.\n5. Nhập số No DCU.\n6. Chọn Lấy thông tin.\n7. Kiểm tra thông số.\n8. Trong mục Thao tác chọn Đọc IP-Port.\n9. Nhấn Thực hiện.\n10. Nhập IP-Port cần chuyển.\n11. Trong mục Thao tác chọn Ghi IP-Port.\n12. Nhấn Thực hiện.\n13. Khi hiển thị thông báo Thành công.\n14. Trong mục Thao tác chọn Reset.\n",
+    "status": [
+      {
+        "name": "POWER",
+        "desc": "Sáng liên tục khi DCU có nguồn."
+      },
+      {
+        "name": "HES CONNECT",
+        "desc": "Nhấp nháy nhanh khoảng 0.3 giây khi kết nối Server."
+      },
+      {
+        "name": "NET",
+        "desc": "Nhấp nháy nhanh khi Module 4G hoạt động."
+      },
+      {
+        "name": "TR",
+        "desc": "Nhấp nháy khi truyền PLC."
+      },
+      {
+        "name": "A B C",
+        "desc": "Nhấp nháy khi đọc dữ liệu công tơ."
+      }
+    ],
+    "guide": [
+      "Kiểm tra đèn POWER sáng.",
+      "Kiểm tra HES CONNECT nhấp nháy.",
+      "Kiểm tra NET nhấp nháy.",
+      "Kiểm tra anten 4G.",
+      "Kiểm tra SIM còn Data.",
+      "Kiểm tra IP-Port.",
+      "Nếu HES CONNECT đứng yên hoặc tắt → tắt nguồn DCU và cấp nguồn lại.",
+      "Nếu NET chớp chậm hoặc tắt → kiểm tra Module 4G, anten và SIM.",
+      "Nếu không đọc công tơ → kiểm tra dây RS485.Không đặt anten trong tủ sắt kín.",
+      "Nếu có tụ bù thì nên lắp cuộn kháng.",
+      "Kiểm tra cực A/B của RS485 trước khi thay DCU.",
+      "Sau khi thay SIM nên khởi động lại DCU."
+    ],
+    "errors": [
+      {
+        "error": "Không online",
+        "solution": "Kiểm tra nguồn, SIM, anten, IP-Port."
+      },
+      {
+        "error": "Không đọc công tơ",
+        "solution": "Kiểm tra dây RS485 và đúng Port."
+      },
+      {
+        "error": "Đèn NET không nhấp nháy",
+        "solution": "Kiểm tra Module 4G."
+      },
+      {
+        "error": "Không ping được Server",
+        "solution": "Kiểm tra IP-Port hoặc mạng 4G."
+      },
+      {
+        "error": "Đọc công tơ lúc được lúc không",
+        "solution": "Kiểm tra dây RS485, tiếp xúc đầu cos."
+      },
+      {
+        "error": "Đèn HES CONNECT không nhấp nháy",
+        "solution": "Khởi động lại DCU."
+      }
+    ],
+    "wiring": [
+      "assets/images/DCU/Omni/wiring_elster.jpg",
+      "assets/images/DCU/Omni/wiring_gelex.jpg",
+      "assets/images/DCU/Omni/wiring_hhm.jpg",
+      "assets/images/DCU/Omni/wiring_psmart_1p.jpg",
+      "assets/images/DCU/Omni/wiring_psmart_3p.jpg",
+      "assets/images/DCU/Omni/wiring_vse_1p.jpg",
+      "assets/images/DCU/Omni/wiring_vse_3p.jpg",
+      "assets/images/DCU/Omni/wiring_omni_1p.jpg",
+      "assets/images/DCU/Omni/wiring_omni_3p.jpg"
+    ]
+  }
+}
