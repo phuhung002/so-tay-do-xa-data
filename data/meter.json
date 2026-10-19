@@ -1,6 +1,6 @@
 {
   "HHM": {
-    "image": "assets/images/METER/hhm/hhm_meter.png",
+    "image": "assets/images/METER/HHM/hhm_meter.png",
     "status": [
       {
         "name": "LCD",
@@ -179,7 +179,7 @@
     "pdf": "assets/pdf/HHM/HHM_Meter.pdf"
   },
   "GELEX": {
-    "image": "assets/images/METER/gelex/meter_gelex.jpg",
+    "image": "assets/images/METER/GELEX/meter_gelex.jpg",
     "status": [
       {
         "name": "LCD",
@@ -490,7 +490,7 @@
     "pdf": "assets/pdf/VINASINO/VINASINO_Meter.pdf"
   },
   "ELSTER": {
-    "image": "assets/images/METER/elster/elster_meter.png",
+    "image": "assets/images/METER/ELSTER/elster_meter.png",
     "status": [
       {
         "name": "LCD",
@@ -658,7 +658,7 @@
     "pdf": "assets/pdf/ELSTER/ELSTER_Meter.pdf"
   },
   "LANDIS": {
-    "image": "assets/images/METER/landis/landis_meter.png",
+    "image": "assets/images/METER/LANDIS/landis_meter.png",
     "status": [
       {
         "name": "LCD",
@@ -853,7 +853,7 @@
     "pdf": "assets/pdf/LANDIS/LANDIS_E650.pdf"
   },
   "PSMART": {
-    "image": "assets/images/METER/psmart/meter_psmart.jpg",
+    "image": "assets/images/METER/PSMART/meter_psmart.jpg",
     "status": [
       {
         "name": "LCD",
@@ -1007,7 +1007,7 @@
     "pdf": "assets/pdf/PSMART/PSMART_Meter.pdf"
   },
   "OMNI": {
-    "image": "assets/images/METER/omni/meter_omni.png",
+    "image": "assets/images/METER/OMNI/meter_omni.png",
     "status": [
       {
         "name": "LCD",
